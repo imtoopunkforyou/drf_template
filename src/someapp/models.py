@@ -15,7 +15,7 @@ class Album(CreateUpdateMixin):
         unique_together = ['name', 'artist']
 
     def __str__(self) -> str:
-        return f'{self.name}: {self.artist}'
+        return f'{self.artist}: {self.name}'
 
 
 class Track(CreateUpdateMixin):
